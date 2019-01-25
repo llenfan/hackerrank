@@ -22,10 +22,10 @@ def countTriplets(arr, r):
         counter_arr.subtract([i])
 
         """
-        Explanation: The counter of triplets make a sum when being focused and analzing i value, if it exists 
-        in the previus value on his geometric projection (i / r) and whose aparition frecuency is getting loaded 
-        on the backward counting (past values), and when also exists his next value on the geometric projection 
-        (i * r) and  his frecuency on the forward counter (counter_arr).
+        Explanation: The counter of triplets make a sum when being focused and analyzed i value, if it exists 
+        in the previous value on his geometric projection (i / r) and whose apparition frequency is getting loaded 
+        on the backward counting (past values), when also exists his next value on the geometric projection 
+        (i * r) and  his frequency on the forward counter (counter_arr).
         """
 
         triplets += c.get(i / r, 0) * counter_arr.get(i * r, 0)
